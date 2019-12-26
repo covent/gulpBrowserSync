@@ -1,0 +1,25 @@
+{
+  "name": "lesgaleries",
+  "version": "1.0.0",
+  "description": "Les Galeries du Luxembourg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"To Be Defined!!!\"",
+    "build": "npm run clean && cross-env webpack --env.environment=production --env.treeshake=yes",
+    "clean": "rimraf build",
+    "dev": "webpack-dev-server --env.browser=yes --env.verbose=no",
+    "start": "npm run dev"
+  },
+  "author": "Alex Lussana",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "start-server-and-test": "^1.10.6"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp-nodemon": "^2.4.2",
+    "gulp-sass": "^4.0.2",
+    "server": "^1.0.21"
+  }
+}

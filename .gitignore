@@ -1,0 +1,14 @@
+.build
+.ext
+.node_modules
+.idea
+*.DS_Store
+.classpath
+.project
+.settings/
+.springBeans
+.idea
+.DS_Store
+target
+*.iml
+/node_modules/
