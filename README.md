@@ -12,6 +12,18 @@ The app runs on port 7000, browsersync should automatically opern a chrome brows
  
 Change app.js, public/index.html or public/site.css and enjoy the automatic lifecycle.
 
+### Lifecycle Flow
+
+
+```
+gulp starts browsersync and Nodemon
+Nodemon starts app.js -> App.js defines Express Node Server and starts on port 5000
+Browsersync builds a proxy on port 7000 and injects a js which throug a web soocket pings node server to check for updates
+--> Whenever the app changes Nodemon recompiles it
+--> Whenever browsersync detects a change in the watched resources it refreshes browser 
+```
+
+
 ### Prerequisites
 
 
